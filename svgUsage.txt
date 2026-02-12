@@ -1,0 +1,7 @@
+**Usage**
+
+-- In HTML --
+<img src="file_svg_dir" class="class_name" alt="name_icon">
+
+-- Example --
+<img src="svg/heart.svg" class="icon" alt="heart">

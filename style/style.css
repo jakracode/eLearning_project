@@ -1,0 +1,168 @@
+:root {
+    /* Color */
+    --background-color: #ffffff;
+    --title-color: #5F5881;
+    --button-color: #F66962;
+    --footer-color: #282834;
+    --star-color: #F68C1E;
+    --price-color: #f68c1e;
+    --view-color: #DF5415;
+    --main-background-color: #FEF0EF;
+    --sky-background-color: #DCF7FE;
+    --lightPurple-background-color: #EFEFF7;
+
+
+    --border-radius: 5px;
+    --box-shadow: 0 0 10px #D9D9D9;
+    --default-font: 'Inter', sans-serif;
+    --icon-width: 24px;
+    --icon-height: 24px;
+    --title-font-size: 28px;
+    --subtitle-font-size: 24px;
+    --content-font-size: 18px;
+    --input-font-size: 16px;
+}
+
+/*  
+How to use this root
+
+Use this link in another css file:
+@import url('variables.css');
+
+Usage example:
+background-color: var(--background-color);
+*/
+
+/*----------------------------------------------*/
+
+/*
+Icon style
+
+.icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+}
+
+*/
+
+* {
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--main-background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+/* Header */
+header {
+    width: 85vw;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--main-background-color);
+}
+
+header h1 {
+    font-size: 36px;
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    gap: 80px;
+}
+
+header ul li {
+    list-style: none;
+    font-size: var(--content-font-size);
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--title-color);
+    transition: 0.4s;
+}
+
+header a:hover {
+    color: var(--button-color);
+}
+
+header .header-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+    height: 36px;
+    padding: 0 10px;
+    background-color: rgb(255, 234, 225);
+    border-radius: 30px;
+}
+
+header .header-search input {
+    border: none;
+    background-color: transparent;
+    width: 160px;
+    font-size: var(--input-font-size);
+}
+
+input:focus {
+    outline: none;
+}
+
+header button {
+    width: 100px;
+    height: 36px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header button:hover {
+    background-color: #F54B3B;
+}
+
+header button:hover a {
+    color: #fff;
+}
+
