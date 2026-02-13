@@ -54,6 +54,7 @@ Icon style
 
 body {
     padding: 0;
+    padding-top: 80px;
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -81,15 +82,19 @@ h3 {
 
 /* Header */
 header {
-    width: 85vw;
+    width: 100%;
+    padding: 0 7.5vw;
     margin: 0 auto;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--main-background-color);
+    z-index: 1000;
 }
 
 header h1 {
